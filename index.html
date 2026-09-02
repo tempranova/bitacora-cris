@@ -4,8 +4,30 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>La Bitácora de Cris — Viajes que dejan huella</title>
-<meta name="description" content="Viajes organizados desde La Coruña. Historia, naturaleza y pueblos con encanto en cada ruta.">
-<link rel="icon" href="images/logo-badge.jpg">
+<meta name="description" content="Escapadas organizadas con historia, naturaleza y pueblos con encanto. Descubre el próximo viaje de La Bitácora de Cris y vive una aventura que deja huella.">
+<link rel="canonical" href="https://bitacoracris.com/">
+<meta name="theme-color" content="#1f3a2c">
+
+<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="images/favicon-192.png">
+<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="La Bitácora de Cris">
+<meta property="og:locale" content="es_ES">
+<meta property="og:url" content="https://bitacoracris.com/">
+<meta property="og:title" content="La Bitácora de Cris — Viajes que dejan huella">
+<meta property="og:description" content="Viaje a Burgos y sus Merindades: 17 y 18 de octubre, desde 225 € por persona. Historia, naturaleza y pueblos con encanto. Plazas limitadas.">
+<meta property="og:image" content="https://bitacoracris.com/images/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Viaje a Burgos y sus Merindades — La Bitácora de Cris">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="La Bitácora de Cris — Viajes que dejan huella">
+<meta name="twitter:description" content="Viaje a Burgos y sus Merindades: 17 y 18 de octubre, desde 225 € por persona. Historia, naturaleza y pueblos con encanto.">
+<meta name="twitter:image" content="https://bitacoracris.com/images/og-image.jpg">
+
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -15,7 +37,7 @@
     <a href="index.html" class="brand">
       <img src="images/logo-full.jpg" alt="La Bitácora de Cris">
     </a>
-    <nav class="main-nav">
+    <nav class="main-nav" id="main-nav">
       <ul>
         <li><a href="index.html" class="active">Inicio</a></li>
         <li><a href="viajes.html">Viajes</a></li>
@@ -23,8 +45,12 @@
         <li><a href="contacto.html">Contacto</a></li>
       </ul>
     </nav>
+    <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="main-nav">
+      <span></span><span></span><span></span>
+    </button>
   </div>
 </header>
+<noscript><style>.main-nav{max-height:none!important;position:static!important;overflow:visible!important;} .main-nav ul{flex-direction:row!important;padding:0!important;} .main-nav a{border-bottom:none!important;padding:0!important;} .nav-toggle{display:none!important;}</style></noscript>
 
 <section class="hero">
   <div class="container">
@@ -143,5 +169,6 @@
   </div>
 </footer>
 
+<script src="js/nav.js"></script>
 </body>
 </html>
